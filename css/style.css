@@ -30,6 +30,9 @@ body {
     color:
 }
 
+/*
+section hero
+*/
 
 .hero {
     min-height: 800px;
@@ -37,37 +40,30 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-
-
 }
 
-.grid-fixed {
+.nav-bar {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
     padding: 50px 15px 0 15px;
-
 }
 
 .overlay {
-
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
-    /*    background-color: rgb(0,0,0);*/
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     overflow-x: hidden;
     transition: .5s;
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .overlay nav ul {
@@ -85,7 +81,6 @@ ul li a {
     text-decoration: none;
     color: #fff;
     transition: .3s ease;
-
 }
 
 ul li a:hover {
@@ -94,12 +89,10 @@ ul li a:hover {
 
 .overlay span {
     position: absolute;
-    top: 70px;
-    right: 145px;
+    top: 10px;
+    right: 30px;
     font-size: 50px;
     color: #fff;
-    
-    
 }
 
 .overlay span:hover {
@@ -133,7 +126,6 @@ ul li a:hover {
 }
 
 .cta a {
-    /*    background: transparent;*/
     height: 50px;
     width: 210px;
     text-decoration: none;
@@ -170,12 +162,10 @@ Services
     grid-gap: 60px;
     padding: 100px 15px;
     color: var(--first-font-color);
-    /*        text-align: center;*/
 }
 
 .box {
     text-align: center;
-
 }
 
 .circle {
@@ -190,7 +180,6 @@ Services
 }
 
 .box h3 {
-    /*    color: var(--first-font-color);*/
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -198,7 +187,6 @@ Services
 }
 
 .box p {
-    /*    color: var(--first-font-color);*/
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
@@ -238,12 +226,6 @@ Section subscribe
     font-size: 16px;
     font-weight: 300;
     line-height: 50px;
-
-
-    /*
-    display: inline-block;
-    width: 100%;
-*/
 }
 
 .subscribe input[type=submit] {
@@ -258,13 +240,7 @@ Section subscribe
     text-transform: uppercase;
     background-color: var(--third-font-color);
     cursor: pointer;
-
-
-
-    /*    display: inline-block;*/
-    /*    width: 100%;*/
 }
-
 
 /*
 section our-works
@@ -287,13 +263,11 @@ section our-works
     position: relative;
     width: 100%;
     height: 100%;
-
 }
 
 .photo-container img {
-    width: 100%;
-    height: 100%;
-
+    max-width: 100%;
+    height: auto;
 }
 
 .photo-overlay {
@@ -317,14 +291,6 @@ section our-works
 }
 
 .overlay-text {
-    /*
-    
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-*/
     width: 100%;
     height: 100%;
     display: flex;
@@ -332,7 +298,6 @@ section our-works
     align-items: center;
     justify-content: center;
     color: var(--second-font-color);
-    /*    justify-content: center;*/
     text-align: center;
 }
 
@@ -340,7 +305,6 @@ section our-works
     font-size: 25px;
     font-weight: 600;
     text-transform: uppercase;
-
 }
 
 .overlay-text p {
@@ -389,8 +353,6 @@ section our-works
     margin-right: auto;
     margin-left: auto;
     transition: .3s ease-in;
-
-
 }
 
 .our-works .show-more-btn:hover {
@@ -398,29 +360,10 @@ section our-works
     color: var(--second-font-color);
     background-color: var(--first-font-color);
     border: 1px solid var(--first-font-color);
-
-
 }
 
 .gallery-hide-show {
     margin-top: 30px;
-/*
-    width: 0;
-    height: 0;
-    overflow: hidden;
-*/
-
-
-/*    display: none;*/
-    /*    display: grid;*/
-    /*    height: 0;*/
-    /*        width: 100%;*/
-/*    transition: 1s;*/
-/*    overflow: hidden;*/
-/*    position: relative;*/
-/*    top: 0;*/
-/*    left: 0;*/
-
 }
 
 /*
@@ -434,16 +377,11 @@ section slider
     background-position: center;
     padding: 100px 0;
     text-align: center;
-
-
-
-
 }
 
 .unslider {
     position: relative;
 }
-
 
 .slider-content {
     padding: 0 250px;
@@ -455,7 +393,6 @@ section slider
     line-height: 40px;
     padding: 40px 0;
     font-weight: 300;
-
 }
 
 .slider-content p {
@@ -463,18 +400,12 @@ section slider
     font-weight: 600;
 }
 
-
-
-
 .unslider-arrow {
     position: absolute;
     top: 50%;
     margin-top: -20px;
-        left: 150px;
-
-
+    left: 150px;
 }
-
 
 .unslider-arrow.next {
     left: auto;
@@ -484,14 +415,11 @@ section slider
 .unslider .fas {
     color: #fff;
     font-size: 40px;
-
 }
 
-
-
-
-
-
+/*
+.intro 
+*/
 
 .intro {
     color: var(--first-font-color);
@@ -501,7 +429,7 @@ section slider
     text-align: center;
     padding: 0 15px;
     max-width: 1200px;
-    
+
 }
 
 .intro h2 {
@@ -528,7 +456,6 @@ section our-team
 */
 
 .our-team {
-    /*    margin: 100px 0;*/
     padding: 100px 0;
 }
 
@@ -610,20 +537,11 @@ section our-team
     color: var(--second-font-color);
 }
 
-
-/*
-.social .fa-facebook-f, .social .fa-twitter, .social .fa-google-plus-g {
-    color: var(--second-font-color);
-    background-color: var(--first-font-color);
-}
-*/
-
 .social .fa-facebook-f:hover,
 .social .fa-twitter:hover,
 .social .fa-google-plus-g:hover {
     cursor: pointer;
     opacity: .8;
-
 }
 
 /*
@@ -631,13 +549,12 @@ section contact-form
 */
 
 .contact-form {
-    min-height: 801px;
+    min-height: 800px;
     background-image: url(../images/bg%20contact%20%20form.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     padding: 100px 0;
-
 }
 
 .white {
@@ -649,7 +566,6 @@ section contact-form
     margin: 0 auto;
     padding: 0 15px;
     display: grid;
-    /*    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));*/
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
 }
@@ -660,24 +576,22 @@ section contact-form
     border-radius: 10px;
     padding-left: 20px;
     padding-top: 20px;
-    color: #3b434c;
+    color: var(--first-font-color);
     font-size: 16px;
     font-weight: 400;
     border: none;
     text-transform: capitalize;
-
 }
 
 .contact-form form input[type=text] {
     border-radius: 10px;
     height: 50px;
     padding-left: 20px;
-    color: #3b434c;
+    color: var(--first-font-color);
     font-size: 16px;
     font-weight: 400;
     border: none;
     text-transform: capitalize;
-
 }
 
 .contact-form form input[type=submit] {
@@ -688,7 +602,7 @@ section contact-form
     border: none;
     display: inline-block;
     line-height: 50px;
-    color: #ffffff;
+    color: var(--second-font-color);
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -698,8 +612,6 @@ section contact-form
     cursor: pointer;
 }
 
-
-
 .contact-form form ul {
     align-self: center;
     padding: 0;
@@ -707,13 +619,10 @@ section contact-form
     list-style: none;
     display: flex;
     justify-content: flex-end;
-
 }
 
 .contact-form form ul li {
-    /*    padding: 0;*/
     margin-right: 20px;
-    /*    display: inline-block;*/
 }
 
 .contact-form form ul li:last-child {
@@ -728,18 +637,14 @@ section contact-form
     text-align: center;
     border-radius: 50%;
     color: var(--second-font-color);
-
 }
 
 .contact-form form .fa-facebook-f {
     background-color: var(--facebook-color);
 }
 
-
-
 .contact-form form .fa-twitter {
     background-color: var(--twitter-color);
-
 }
 
 .contact-form form .fa-google-plus-g {
@@ -764,7 +669,6 @@ footer p {
     color: var(--second-font-color);
     text-align: center;
     font-size: 18px;
-
 }
 
 
@@ -773,65 +677,141 @@ media queries
 */
 
 @media screen and (max-width: 991px) {
+    /*    
+    section hero
+    */
     .cta p {
         padding-left: 0;
         padding-right: 0;
-
     }
-    
+
     .intro p {
         padding-left: 50px;
         padding-right: 50px;
     }
-    
-    
+
+    /*
+    section slider
+    */
+    .slider-content {
+        padding: 0 80px;
+    }
+
+    .unslider-arrow {
+        margin-top: -25px;
+        left: 40px;
+    }
+
+    .unslider-arrow.next {
+        right: 40px;
+    }
+
+    .unslider .fas {
+        font-size: 50px;
+    }
+
 }
 
 @media screen and (max-width: 767px) {
+    /*    
+    section hero
+    */
+    .nav-bar {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-bar img {
+        margin: 10px 0 20px 0;
+    }
+
+    .cta {
+        padding-top: 100px;
+        padding-bottom: 30px;
+    }
+
+    .cta h1 {
+        font-size: 54px;
+    }
+
+    .cta p {
+        font-size: 22px;
+    }
+
+    .cta a:first-of-type {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .cta a {
+        width: 100%;
+    }
+
+    .intro p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /*    
+    section slider
+    */
+    .slider-content p {
+        font-size: 16px;
+    }
+
+    .unslider-arrow {
+        margin-top: -25px;
+        left: 20px;
+    }
+
+    .unslider-arrow.next {
+        right: 20px;
+    }
+
+    /*     
+    section contact form
+    */
     .contact-form form {
         display: grid;
-     grid-template-columns: 100%;
+        grid-template-columns: 100%;
     }
-    
+
     .contact-form form textarea {
-    grid-column: 1/2;
-}
-    .contact-form form input[type=submit] {
-        margin: 0 auto;
+        grid-column: 1/2;
     }
-    
+    .contact-form form input[type=submit] {
+        width: 100%
+    }
+
     .contact-form form ul {
         justify-content: center;
     }
-    
+
+    .contact-form form ul li {
+        margin-right: 10px;
+    }
+
+    /*    
+    section subscribe
+    */
     .subscribe form {
-            grid-template-columns: 100%;
+        grid-template-columns: 100%;
 
     }
-    
+
     .subscribe input[type=text] {
         grid-column: 1/2;
     }
-    
+
     .subscribe input[type=submit] {
         grid-column: 1/2;
-/*
-        width: 210px;
-        margin: 0 auto;
-*/
     }
-    
 
-    
-    .cta a:first-of-type {
-    margin-right: 0;
-        margin-bottom: 30px;
-}
-        .cta a {
-/*        display: block;*/
-            width: 100%;
-/*      text-align: center;*/
-/*        margin-left: auto;*/
-/*            margin-right: auto;*/
+    /*
+    section our-works
+    */
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 300px);
     }
-        
+
+}
